@@ -3,13 +3,12 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class Harvester : MonoBehaviour
 {
-    [SerializeField] ResourceStorage _storage;
+    [SerializeField] private ResourceStorage _storage;
 
     private Transform _target;
     private Animator _animator;
     private bool _isReturning;
     private float _speed = 10;
-
 
     public bool IsBusy { get; private set; }
 

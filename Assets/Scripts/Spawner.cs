@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] GameObject _creation;
-    [SerializeField] int _amount;
-    [SerializeField] Terrain _terrain;
+    [SerializeField] private GameObject _creation;
+    [SerializeField] private int _amount;
+    [SerializeField] private Terrain _terrain;
 
     private Vector2 _minXZ;
     private Vector2 _maxXZ;

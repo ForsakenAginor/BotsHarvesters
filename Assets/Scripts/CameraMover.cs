@@ -8,8 +8,7 @@ public class CameraMover : MonoBehaviour
     private float _minX;
     private float _minZ;
     private Dictionary<KeyCode, Vector3> _cameraControls;
-    private Vector3 _currentPosition;
-    
+    private Vector3 _currentPosition;    
 
     private void Awake()
     {
@@ -20,7 +19,6 @@ public class CameraMover : MonoBehaviour
         _maxZ = terrain.terrainData.size.z + _minZ;
         _cameraControls = GetControlsDictionary();
     }
-
 
     private void Update()
     {
